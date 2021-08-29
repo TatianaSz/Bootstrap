@@ -1,4 +1,30 @@
-$primary:#ec5b3a;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+);
 
+
+.custom-grad{
+    background: rgb(100,96,236);
+    background: -moz-linear-gradient(81deg, rgba(100,96,236,1) 20%, rgba(99,145,246,1) 100%);
+    background: -webkit-linear-gradient(81deg, rgba(100,96,236,1) 20%, rgba(99,145,246,1) 100%);
+    background: linear-gradient(81deg, rgba(100,96,236,1) 20%, rgba(99,145,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6460ec",endColorstr="#6391f6",GradientType=1); 
+    border-radius:100% 0% 77% 23% / 0% 79% 21% 100% ;
+}
+.custom-grad-btn{
+    background: rgb(213,24,121);
+    background: -moz-linear-gradient(81deg, rgba(213,24,121,1) 37%, rgba(246,79,160,1) 100%);
+    background: -webkit-linear-gradient(81deg, rgba(213,24,121,1) 37%, rgba(246,79,160,1) 100%);
+    background: linear-gradient(81deg, rgba(213,24,121,1) 37%, rgba(246,79,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d51879",endColorstr="#f64fa0",GradientType=1); 
+}
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss'
+
