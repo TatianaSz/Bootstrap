@@ -8,15 +8,27 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 5,
 );
+$position-values: (
+  0: 0,
+  25:25%,
+  35:35%,
+  50: 50%,
+  100: 100%
+);
 
-
+.icon{
+    width:40px;
+    height:40px;
+}
 .custom-grad{
-    background: rgb(100,96,236);
-    background: -moz-linear-gradient(81deg, rgba(100,96,236,1) 20%, rgba(99,145,246,1) 100%);
-    background: -webkit-linear-gradient(81deg, rgba(100,96,236,1) 20%, rgba(99,145,246,1) 100%);
-    background: linear-gradient(81deg, rgba(100,96,236,1) 20%, rgba(99,145,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6460ec",endColorstr="#6391f6",GradientType=1); 
-    border-radius:100% 0% 77% 23% / 0% 79% 21% 100% ;
+    background: rgb(32,25,162);
+    background: -moz-linear-gradient(190deg, rgba(32,25,162,1) 37%, rgba(206,79,246,1) 100%);
+    background: -webkit-linear-gradient(190deg, rgba(32,25,162,1) 37%, rgba(206,79,246,1) 100%);
+    background: linear-gradient(190deg, rgba(32,25,162,1) 37%, rgba(206,79,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2019a2",endColorstr="#ce4ff6",GradientType=1);  
+}
+.clip{
+    clip-path: polygon(0% 0%, 0% 100%, 48% 100%, 100% 75%, 100% 0%);
 }
 .custom-grad-btn{
     background: rgb(213,24,121);
@@ -24,6 +36,16 @@ $spacers: (
     background: -webkit-linear-gradient(81deg, rgba(213,24,121,1) 37%, rgba(246,79,160,1) 100%);
     background: linear-gradient(81deg, rgba(213,24,121,1) 37%, rgba(246,79,160,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d51879",endColorstr="#f64fa0",GradientType=1); 
+}
+.shapes{
+    width:600px;
+    height:400px;
+    background: rgb(243,242,244);
+    background: -moz-linear-gradient(118deg, rgba(243,242,244,0.061297761292016806) 37%, rgba(247,222,255,0.08370672487745101) 100%);
+    background: -webkit-linear-gradient(118deg, rgba(243,242,244,0.061297761292016806) 37%, rgba(247,222,255,0.08370672487745101) 100%);
+    background: linear-gradient(118deg, rgba(243,242,244,0.061297761292016806) 37%, rgba(247,222,255,0.08370672487745101) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3f2f4",endColorstr="#f7deff",GradientType=1); 
+    border-radius:30% 70% 70% 30% / 68% 54% 46% 32% ;
 }
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss'
